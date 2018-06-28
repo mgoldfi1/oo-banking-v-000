@@ -23,7 +23,6 @@ elsif self.status = "complete"
   self.amount = 0
 
   elsif !self.valid?
-  self.status = "rejected"
   "Transaction rejected. Please check your account balance."
 
 
