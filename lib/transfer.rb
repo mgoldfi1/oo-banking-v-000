@@ -26,11 +26,12 @@ elsif self.sender.valid? == false
     self.status = 'rejected'
     "Transaction rejected. Please check your account balance."
 
-binding.pry
+
 
 
 
 end
+binding.pry
 end
 
 
