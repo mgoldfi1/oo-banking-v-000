@@ -19,7 +19,7 @@ def execute_transaction
   receiver.balance += self.amount
   self.status = "complete"
 else
-  self.amount = 0
+  self.status = "rejected"
 
 end
 end
