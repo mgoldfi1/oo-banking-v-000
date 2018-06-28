@@ -31,7 +31,7 @@ elsif self.valid? == false || self.amount > sender.balance
 
 
 end
-binding.pry
+
 end
 
 
