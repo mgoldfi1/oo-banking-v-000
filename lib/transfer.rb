@@ -18,6 +18,9 @@ def execute_transaction
   sender.balance -= self.amount
   receiver.balance += self.amount
   self.status = "complete"
+else
+  sender.balance
+  receiver.balance
 end
 end
 
