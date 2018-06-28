@@ -14,16 +14,14 @@ sender.valid? && receiver.valid?
 end
 
 def execute_transaction
-  if self.valid?
+  if self.valid? && self.status = "pending"
   sender.balance -= self.amount
   receiver.balance += self.amount
   self.status = "complete"
 
-elsif self.status = "complete"
-  self.amount = 0
-
   elsif !self.valid?
   "Transaction rejected. Please check your account balance."
+  self.status = 'rejected'
 
 
 
