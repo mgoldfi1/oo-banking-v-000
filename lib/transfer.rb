@@ -2,9 +2,20 @@ class Transfer
 attr_reader :transfer
 attr_accessor :status
 
-def initialize(transfer)
-  @transfer = transfer
+def initialize
+  
   @status = "pending"
 end
+
+
+
+
+
+
+
+
+
+
+
 
 end
