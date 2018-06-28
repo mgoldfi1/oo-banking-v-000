@@ -15,7 +15,7 @@ sender.valid? && receiver.valid?
 end
 
 def execute_transaction
-  if self.valid? == false
+  if self.valid? == false || self.amount > sender.balance
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
   elsif self.status == "complete"
